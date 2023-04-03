@@ -1,0 +1,141 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --red: hsl(1, 90%, 64%);
+  --blue: hsl(219, 85%, 26%);
+  --dark-blue: hsl(224, 21%, 14%);
+  --light-grayish-blue-1: hsl(211, 68%, 94%);
+  --light-grayish-blue-2: hsl(205, 33%, 90%);
+  --grayish-blue: hsl(219, 12%, 42%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  background-color: var(--light-grayish-blue-1);
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.content {
+  background-color: var(--white);
+  width: 600px;
+  padding-bottom: 1rem;
+  border-radius: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 1rem;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bubble {
+  background-color: var(--blue);
+  width: 30px;
+  height: 25px;
+  text-align: center;
+  color: var(--white);
+  font-weight: bold;
+  border-radius: 5px;
+  margin-left: 1rem;
+}
+
+.mark-all {
+  color: var(--grayish-blue);
+}
+
+.red-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--red);
+}
+
+.profile-photo {
+  width: 40px;
+}
+
+.notification {
+  background-color: var(--light-grayish-blue-1);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin: 0.5rem 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.commented {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.comment-container {
+  justify-content: space-between;
+}
+
+.noti-text,
+.time {
+  font-size: 13px;
+}
+
+.name,
+.post {
+  font-weight: bold;
+}
+
+.time,
+.text,
+.post,
+.noti-text {
+  color: var(--grayish-blue);
+}
+
+.group-name {
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.private-message {
+  align-items: flex-start;
+}
+
+.message {
+  background-color: var(--white);
+  border: 1px solid var(--light-grayish-blue-1);
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 13.5px;
+  color: var(--grayish-blue);
+  margin-top: 1rem;
+}
